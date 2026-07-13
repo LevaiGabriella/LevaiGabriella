@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zoltanszabo91.github.io/L-vaiGabriella/sitemap.xml

@@ -1,0 +1,681 @@
+/* sections */
+:root {
+    --primary: #c1121f;
+    --btnactive: #9b0f19;
+
+    --bg: #050505;
+    --layout: #0f0f0f;
+    --bgop: rgba(13, 13, 13, 0.8);
+
+    --line: #242424;
+
+    --text: #f5f5f5;
+    --muted-text: #a1a1a1;
+}
+
+hr{
+    border: none;
+    width: 140px;
+    height: 1px;
+    background: linear-gradient(to right, var(--primary) 0%, var(--bg) 100%);
+    margin: 1rem 0;
+}
+
+/* -- Nemsablon -- */
+
+
+.Nemsablon_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.Nemsablon_description{
+    margin: 2rem;
+    max-width: 400px;
+}
+.Nemsablon_list{
+    display: flex;
+    max-width: 1300px;
+    gap: 1.5rem;
+}
+.Nemsablon_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border: solid 3px var(--line);
+    border-radius: 8px;
+    width: 200px;
+    background: radial-gradient(
+        circle at 30% 70%, 
+        var(--bg) 30%, 
+        var(--line) 100%);
+    transition: all 0.3s ease;
+}
+.Nemsablon_card:hover{
+    transform: scale(1.03);
+}
+.Nemsablon_img{
+    width: 150px;
+    margin: 1rem;
+}
+
+@media (max-width: 1140px) {
+    .Nemsablon_list{
+        flex-direction: column;
+    }
+    .Nemsablon_description{
+        width: 50%;
+    }
+    .Nemsablon_card{
+        flex-direction: row;
+        width: auto;
+    }
+}
+@media (max-width: 750px) {
+    .Nemsablon_content{
+        flex-direction: column;
+    }
+    .Nemsablon_description{
+        text-align: center;
+        width: 90%;
+    }
+    .Nemsablon_content hr{
+        background: linear-gradient(to right, var(--bg) 0%, var(--primary) 40%, var(--primary) 60%, var(--bg) 100%);
+        margin: 1rem auto;
+    }
+}
+
+
+/* -- Célod -- */
+
+
+.goal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+            /* - Lista - */
+            .goal-list-cont{
+                flex: 1;
+                margin-left: clamp(16px,
+                    calc(16px + (100vw - 1300px) * 0.3067),
+                    200px
+                    );
+            }
+            .goal-list {
+                list-style: none;
+                padding: 0;
+                margin: 40px 0;
+            }
+
+            .goal-list li {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                padding: 22px 0;
+
+                color: #fff;
+                font-size: 1.2rem;
+                font-weight: 400;
+
+                border-bottom: 1px solid rgba(255,255,255,0.08);
+            }
+
+            .goal-list li i {
+                color: #e10600;
+                font-size: 1.8rem;
+
+                min-width: 32px;
+            }
+
+            /* - Kép - */
+
+            .goal-img {
+                flex: 1;
+                height: 100%;
+                position: relative;
+                overflow: visible;
+            }
+
+                    /* PIROS HÁTTÉR (keret) */
+            .goal-img::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+
+                background: var(--primary);
+
+                clip-path: polygon(20% 0, 100% 0, 85% 100%, 0% 100%);
+
+                /* EZ HOZZA LÉTRE A KERETET */
+                transform: translateX(-15px);
+
+                z-index: 1;
+            }
+
+            .goal-img img {
+                object-fit: cover;
+                object-position: calc(50% - 400px) center;
+                display: block;
+                height: 100%;
+                width: 100%;
+                min-height: 700px;
+
+                position: relative;
+                z-index: 2;
+
+                clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+            }
+
+@media (max-width: 750px){
+    .goal{
+        flex-direction: column;
+    }
+    .goal-img::before{
+        content: none;
+    }
+    .goal-img img{
+        clip-path: none;
+    }
+    .goal-list-cont{
+        margin-top: 2rem;
+    }
+    .goal h2{
+        width: 100%;
+        text-align: center;
+    }
+    .goal hr{
+        background: linear-gradient(to right, var(--bg) 0%, var(--primary) 40%, var(--primary) 60%, var(--bg) 100%);
+        margin: 1rem auto;
+    }
+}
+
+/* -- Szolgáltatások -- */
+
+.szolg_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.szolg_list{
+    max-width: 1300px;
+    width: 100%;
+    gap: 2rem;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.szolg_card{
+    border: solid 3px var(--line);
+    background: radial-gradient(
+        circle at 30% 70%, 
+        var(--bg) 30%, 
+        var(--line) 100%);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.szolg_card:hover{
+    transform: scale(1.03);
+}
+.szolg_card h3, .szolg_card p{
+    margin: 1.5rem;
+}
+.szolg_card_desc{
+    position: relative;
+}
+.szolg_img{
+    width: 100%;
+    object-fit: cover;
+    border-bottom: solid 2px var(--primary);
+}
+.premium{
+    border: solid 3px rgb(143, 121, 0);
+    scale: 1.03;
+}
+.szol_logo_cont{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -80px;
+    left: 20px;
+    background: rgba(193, 18, 31, 1);
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+        box-shadow:
+        0 0 0 5px rgba(0,0,0,1), /* áttetsző fekete gyűrű */
+        0 0 0 8px #b90000;           /* háttérszínű külső gyűrű */
+}
+.szol_logo_cont::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: rgba(0,0,0,.5);
+    z-index: 1;
+}
+.szolg_logo{
+    height: 50px;
+    z-index: 100;
+}
+.szol_logo_prem{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -80px;
+    left: 20px;
+    background: var(--bg);
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    border-radius: 50%;
+        box-shadow:
+        0 0 0 3px rgb(143, 121, 0);
+}
+.szolg_container hr{
+    background: linear-gradient(to right, var(--bg) 0%, var(--primary) 40%, var(--primary) 60%, var(--bg) 100%);
+        margin: 1rem auto;
+}
+.szolg_container p{
+    text-align: left;
+}
+
+
+/* -- To Do Line Section -- */
+
+.todo_line_sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.todo_line_sec h2{
+    text-align: center;
+}
+.todo_line_sec hr{
+    background: linear-gradient(to right, var(--layout) 0%, var(--primary) 40%, var(--primary) 60%, var(--layout) 100%);
+    margin: 1rem auto;
+}
+
+    /* - Line - */
+
+    .todo_line_cont{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 85%;
+    }
+    .round_cont{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .round{
+        height: 40px;
+        width: 40px;
+        border: solid 3px var(--primary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        background: var(--layout);
+    }
+    .round_holder{
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .line_under_round{
+        height: 0px;
+        width: calc(100% - 200px);
+        position: absolute;
+        border: dotted 2px var(--line);
+        z-index: 1;
+        left: 100px;
+    }
+
+
+
+
+    /* - description - */
+
+    .todo_line_desc{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+    }
+    .todo_card{
+        width: 180px;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 2rem;
+    }
+
+@media (max-width: 900px) {
+    .todo_line_cont{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .round_cont{
+        flex-direction: column;
+        height: auto;
+        flex: 0.5;
+    } 
+    .todo_line_desc{
+        flex: 1.5;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+    }
+    .round_holder, .todo_card{
+        width: auto;
+        margin: 1rem;
+        justify-content: center;
+        height: 100px;
+    }
+    .line_under_round{
+        width: 0px;
+        height: calc(100% - 100px);
+        left: 12%;
+        top: 50px;
+    }
+}
+
+
+/* -- Csomagok -- */
+.csomagok h2{
+    text-align: center;
+}
+.csomagok p{
+    text-align: center;
+}
+.csomagok hr{
+    background: linear-gradient(to right, var(--bg) 0%, var(--primary) 40%, var(--primary) 60%, var(--bg) 100%);
+    margin: 1rem auto;
+}
+
+.csomag_slide_cont{
+    position: relative;
+    background-color: var(--bg);
+    height: 300px;
+    width: 600px;
+    margin: auto;
+}
+.csomag_slide_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border: solid 1px var(--primary);
+    background: radial-gradient(
+        circle at 30% 70%, 
+        var(--bg) 30%, 
+        var(--line) 100%);
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 220px;
+    border-radius: 16px;
+    top: 35px;
+    left: 225px;
+    box-shadow: 0 10px 15px rgba(85, 1, 1, 0.6);
+    transition: all .2s ease;
+    user-select: none;
+}
+.ajanlott{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 40deg;
+    top: 15px;
+    left: 28%;
+}
+.csomag_slide_item hr{
+    background: linear-gradient(to right, var(--bg) 0%, var(--primary) 40%, var(--primary) 60%, var(--bg) 100%);
+}
+.active{
+    opacity: 1;
+    z-index: 10;
+    transform: translateX(0) scale(1);
+}
+.left{
+    opacity: 0.8;
+    transform: translateX(-100px) scale(0.8);
+    z-index: 9;
+}
+.right{
+    opacity: 0.8;
+    transform: translateX(100px) scale(0.8);
+    z-index: 9;
+}
+.hide{
+    opacity: 0;
+    pointer-events: none;
+    left: 225px;
+}
+#prev_btn{
+    position: absolute;
+    top: 130px;
+    left: 5px;
+    height: 40px;
+    width: 5px;
+    font-size: 30px;
+    cursor:pointer;
+    user-select:none;
+}
+#next_btn{
+    position: absolute;
+    top: 130px;
+    left: 580px;
+    height: 40px;
+    width: 5px;
+    font-size: 30px;
+    cursor:pointer;
+    user-select:none;
+}
+@media (max-width: 640px){
+    .csomagok{
+        height: fit-content;
+    }
+    .csomag_slide_item{
+        top: 140px;
+        left: 25px;
+    }
+    .csomag_slide_cont{
+        height: 500px;
+        width: 200px;
+        margin: auto;
+    }
+    .left{
+        transform: translateY(-100px) scale(0.8);
+    }
+    .right{
+        transform: translateY(100px) scale(0.8);
+    }
+    .hide{
+        left: 25px;
+    }
+    #prev_btn{
+        top: 10px;
+        left: 99px;
+        rotate: 90deg;
+    }
+    #next_btn{
+        left: 99px;
+        top: 440px;
+        rotate: 90deg;
+    }
+}
+
+
+/* -- Rólam -- */
+
+.rolam{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.rolam_cim hr, .rolam_text hr{
+        margin: 1rem auto;
+        background: linear-gradient(to right, var(--bg) 0%, var(--primary) 40%, var(--primary) 60%, var(--bg) 100%);
+    }
+.rolam_desc_cont{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    max-width: 90%;
+    border: solid 1px var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.rolam_desc{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex: 2;
+}
+.rolam_cimek{
+    flex: 0.5;
+    min-width: 170px;
+    position: relative;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+.rolam_cimek h3 {
+    font-size: 1.3rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+.indicator{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 6px;
+    background-color: var(--primary);
+    transition: all 0.2s ease;
+}
+.rolam_text{
+    overflow-y: auto;
+    margin: 1.3rem;
+    max-width: 650px;
+    border-left: solid 1px var(--line);
+    padding-left: 1rem;
+    height: 500px;
+}
+.rolam_text p{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin: 2rem 0;
+    line-height: 1.8;
+}
+.rolam_img{
+    height: 600px;
+    width: 450px;
+    background: url("../pictures/aboutme.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+}
+
+
+@media (max-width: 950px){
+    .rolam{
+        height: auto;
+    }
+    .rolam_desc_cont{
+        flex-direction: column;
+    }
+    .rolam_img{
+        flex: auto;
+        width: 100%;
+        height: 700px;
+        margin: auto;
+    }
+}
+@media (max-width: 700px) {
+    .rolam_desc{
+        flex-direction: column;
+    }
+}
+
+/* -- email -- */
+
+.email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.email hr{
+    margin: 1rem auto;
+    background: linear-gradient(to right, var(--bg) 0%, var(--primary) 40%, var(--primary) 60%, var(--bg) 100%);
+}
+.email h2, .email p{
+    text-align: center;
+}
+.email-cont{
+    display: flex;
+    flex-direction: column;
+    width: clamp(300px, 80%, 600px);
+}
+label{
+    color: var(--muted-text);
+}
+input{
+    background-color: var(--muted-text);
+    color: var(--bg);
+    border: none;
+    height: 1.7rem;
+    border-radius: 4px;
+    margin: 0.5rem 0 1rem 0;
+}
+textarea{
+    background-color: var(--muted-text);
+    font-family: 'Manrope', sans-serif;
+    color: var(--bg);
+    border: none;
+    border-radius: 4px;
+    margin: 0.5rem 0 1rem 0;
+    resize: vertical;
+}
+input:focus, textarea:focus{
+    outline: none;
+    border: 2px solid var(--btnactive);
+    box-shadow: 0 0 5px var(--primary);
+}
