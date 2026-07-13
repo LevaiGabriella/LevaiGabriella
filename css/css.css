@@ -349,7 +349,6 @@ footer {
 footer a{
     text-decoration: none;
     color: var(--muted-text);
-    margin-right: 2rem;
 }
 
 .btn.active {
@@ -444,6 +443,10 @@ footer a{
     .kapcsolatok{
         align-items: center;
         justify-content: center;
+    }
+    .kapcsolatok img{
+        height: 50px;
+        width: 50px;
     }
 }
 
