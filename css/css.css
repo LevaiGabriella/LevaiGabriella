@@ -340,6 +340,7 @@ footer {
 .kapcsolatok img{
     height: 70px;
     width: 70px;
+    filter: brightness(0) invert(1);
     transition:all 0.1s ease;
 }
 .kapcsolatok img:hover{
