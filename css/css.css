@@ -349,6 +349,7 @@ footer {
 footer a{
     text-decoration: none;
     color: var(--muted-text);
+    margin-right: 2rem;
 }
 
 .btn.active {
