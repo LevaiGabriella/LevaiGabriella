@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://levaigabriella.github.io/LevaiGabriella/sitemap.xml
+Sitemap: https://www.levaigabriella.hu/sitemap.xml
