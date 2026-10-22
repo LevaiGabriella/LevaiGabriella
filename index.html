@@ -5,45 +5,80 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta property="og:title" content="Lévai Gabriella - Személyi edző">
-        <meta property="og:description" content="Személyi edzés és táplálkozási tanácsadás nőknek Budapesten.">
+        <meta property="og:description" content="Személyi edzés és életmódváltás-támogatás nőknek Budapesten.">
         <meta property="og:image" content="https://www.levaigabriella.hu/pictures/share-img.png">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
         <meta property="og:locale" content="hu_HU">
         <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Lévai Gabriella">
         <meta property="og:url" content="https://www.levaigabriella.hu/">
         
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Lévai Gabriella - Személyi edző">
-        <meta name="twitter:description" content="Személyi edzés és táplálkozási tanácsadás nőknek Budapesten.">
+        <meta name="twitter:description" content="Személyi edzés és életmódváltás-támogatás nőknek Budapesten.">
         <meta name="twitter:image" content="https://www.levaigabriella.hu/pictures/share-img.png">
         
         <meta name="author" content="Lévai Gabriella">
-        <meta name="description" content="Személyi edzés, online coaching és táplálkozási tanácsadás nőknek Budapesten. Fenntartható életmódváltás, fogyás, alakformálás és izomépítés Lévai Gabriellával.">
+        <meta name="description" content="Személyi edzés, online coaching és étkezési iránymutatás nőknek Budapesten. Fenntartható életmódváltás, fogyás, alakformálás és izomépítés Lévai Gabriellával.">
         <link rel="canonical" href="https://www.levaigabriella.hu/">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <link href="css/css.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="css/sections.css">
-        <title>Lévai Gabriella | Személyi edző és táplálkozási tanácsadó Budapesten</title>
+        <title>Lévai Gabriella | Személyi edző Budapesten</title>
         <link rel="icon" href="pictures/icon.ico">
         <script type="application/ld+json">
             {
-            "@context":"https://schema.org",
-            "@type":"LocalBusiness",
-            "name":"Lévai Gabriella",
-            "description":"Személyi edzés és táplálkozási tanácsadás",
-            "telephone":"+36204332403",
-            "email":"gabiactivelife@gmail.com",
-            "areaServed":"Budapest"
+                "@context": "https://schema.org",
+                "@type": "HealthAndBeautyBusiness",
+                "@id": "https://www.levaigabriella.hu/#vallalkozas",
+                "name": "Lévai Gabriella",
+                "description": "Személyi edzés, online coaching és étkezési iránymutatás nőknek Budapesten.",
+                "url": "https://www.levaigabriella.hu/",
+                "image": "https://www.levaigabriella.hu/pictures/share-img.png",
+                "logo": "https://www.levaigabriella.hu/pictures/Logoinverse.png",
+                "telephone": "+36204332403",
+                "email": "gabiactivelife@gmail.com",
+                "priceRange": "34 900 - 80 000 Ft",
+                "areaServed": {
+                    "@type": "City",
+                    "name": "Budapest"
+                },
+                "location": [
+                    {
+                        "@type": "Place",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Hengermalom út 19-21.",
+                            "postalCode": "1117",
+                            "addressLocality": "Budapest",
+                            "addressCountry": "HU"
+                        }
+                    },
+                    {
+                        "@type": "Place",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Etele út 57.",
+                            "postalCode": "1119",
+                            "addressLocality": "Budapest",
+                            "addressCountry": "HU"
+                        }
+                    }
+                ],
+                "sameAs": [
+                    "https://www.facebook.com/gabriella.levai.92",
+                    "https://www.instagram.com/levai_gabriella_/"
+                ]
             }
         </script>
     </head>
     <body>
-        <div id="hamb" onclick="hamb_on()">&#9776;</div>
-        <nav class="menu">
-            <a href="#hero"><img id="logo" src="pictures/Logoinverse.png" alt="logo"></a>
+        <button type="button" id="hamb" aria-label="Menü megnyitása" aria-expanded="false" aria-controls="hamb-list">&#9776;</button>
+        <nav class="menu" aria-label="Főmenü">
+            <a href="#hero"><img id="logo" src="pictures/Logoinverse.png" alt="Lévai Gabriella - főoldal"></a>
             
-            <ul class="hamb_list" id="hamb_list">
+            <ul class="hamb-list" id="hamb-list">
                 <li><a href="#services">Szolgáltatások</a></li>
                 <li><a href="#prices">Árak</a></li>
                 <li><a href="#aboutme">Rólam</a></li>
@@ -54,11 +89,10 @@
         <header class="hero-container" id="hero">
             <div class="hero">
                 <div class="hero-info">
-                    <p style="color: var(--primary); text-transform: uppercase;" class="hero-text">személyi edző</p>
-                    <h1 class="hero-text">Lévai Gabriella</h1>
+                    <h1 class="hero-text"><span class="hero-kicker">Személyi edző Budapesten</span>Lévai Gabriella</h1>
                     <hr>
                     <h2 class="hero-text">Célod az én kihívásom, sikered a közös győzelmünk!</h2>
-                    <p class="hero-text">Személyre szabott edzés és táplálkozási tanácsadás nőknek, szélsőségek nélkül - online és személyesen.</p>
+                    <p class="hero-text">Személyre szabott edzés és étkezési iránymutatás nőknek, szélsőségek nélkül - online és személyesen.</p>
                 </div>
                 <a href="#kapcsolatfelvetel" class="btn hero-btn">Írj nekem</a>
             </div>
@@ -66,63 +100,63 @@
         </header>
 
         <main class="content">
-            <section class="szemlelet_container">
-                <div class="szemlelet_item">
-                    <img class="szemlelet_img" style="margin-top: 20px;" src="pictures/Szemlelet/Taplalkozasi_tanacsado.png" alt="Táplálkozási tanácsadó, Személyi edző">
-                    <p>Személyi edző & táplálkozási tanácsadó</p>
+            <section class="szemlelet-container">
+                <div class="szemlelet-item">
+                    <img class="szemlelet-img szemlelet-img-first" src="pictures/Szemlelet/Taplalkozasi_tanacsado.png" alt="">
+                    <p>Személyi edzés & étkezési iránymutatás</p>
                 </div>
-                <div class="vertical_line"></div>
-                <div class="szemlelet_item">
-                    <img class="szemlelet_img" src="pictures/Szemlelet/noi_fokusz.png" alt="Női fókusz">
+                <div class="vertical-line"></div>
+                <div class="szemlelet-item">
+                    <img class="szemlelet-img" src="pictures/Szemlelet/noi_fokusz.png" alt="">
                     <p>Női fókusz</p>
                 </div>
-                <div class="vertical_line middle"></div>
-                <div class="szemlelet_item">
-                    <img class="szemlelet_img" src="pictures/Szemlelet/online_coaching.png" alt="Online tréning">
+                <div class="vertical-line middle"></div>
+                <div class="szemlelet-item">
+                    <img class="szemlelet-img" src="pictures/Szemlelet/online_coaching.png" alt="">
                     <p>Online coaching</p>
                 </div>
-                <div class="vertical_line"></div>
-                <div class="szemlelet_item">
-                    <img class="szemlelet_img" src="pictures/Szemlelet/fenntarthato_szemlelet.png" alt="Fenntartható szemlélet">
+                <div class="vertical-line"></div>
+                <div class="szemlelet-item">
+                    <img class="szemlelet-img" src="pictures/Szemlelet/fenntarthato_szemlelet.png" alt="">
                     <p>Fenntartható szemlélet</p>
                 </div>
             </section>
 
-            <section class="row_one Nemsablon_content">
-                <div class="Nemsablon_description">
+            <section class="row-one nemsablon-content">
+                <div class="nemsablon-description">
                     <h2>Nem sablonokban gondolkodom.</h2>
                     <hr>
                     <p>Minden ember más célokkal, stressz-szinttel, élethelyzettel és kihívásokkal érkezik.</p>
                     <p>Az én feladatom egy olyan fenntartható rendszer kialakítása, amely rólad szól - és amit hosszú távon könnyen tudsz követni.</p>
                 </div>
-                <div class="Nemsablon_list">
-                    <div class="Nemsablon_card">
-                        <img class="Nemsablon_img" src="pictures/NemSablonok/cel.png" alt="Egyéni célok">
+                <div class="nemsablon-list">
+                    <div class="nemsablon-card">
+                        <img class="nemsablon-img" src="pictures/NemSablonok/cel.png" alt="" loading="lazy">
                         <div>
                             <h3>Egyedi célokra szabva</h3>
                             <p>A te élethelyzetedhez igazítva.</p>
                         </div>
                     </div>
-                    <div class="Nemsablon_card">
-                        <img class="Nemsablon_img" src="pictures/NemSablonok/tudomanyos.png" alt="Tudományosan megalapozva">
+                    <div class="nemsablon-card">
+                        <img class="nemsablon-img" src="pictures/NemSablonok/tudomanyos.png" alt="" loading="lazy">
                         <div>
-                            <h3>Tudományosan megalapozva</h3>
-                            <p>Edzés, táplálkozás, pihenés harmóniában.</p>
+                            <h3>Képzett szakember</h3>
+                            <p>Edzés, étkezés, pihenés harmóniában, képesítéssel.</p>
                         </div>
                     </div>
-                    <div class="Nemsablon_card">
-                        <img class="Nemsablon_img" src="pictures/NemSablonok/fenntarthato_szemlelet.png" alt="Fenntartható fejlődés">
+                    <div class="nemsablon-card">
+                        <img class="nemsablon-img" src="pictures/NemSablonok/fenntarthato_szemlelet.png" alt="" loading="lazy">
                         <div>
                             <h3>Fenntartható fejlődés</h3>
-                            <p>lépésről lépésre, reális ütemben.</p>
+                            <p>Lépésről lépésre, reális ütemben.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <div class="section_border"></div>
+            <div class="section-border"></div>
 
-            <section class="row_two goal">
+            <section class="row-two goal">
                 <div class="goal-list-cont">
                     <h2>Neked szól ha a célod:</h2>
                     <hr>
@@ -154,28 +188,28 @@
                     </ul>
                 </div>
                 <div class="goal-img">
-                    <img src="pictures/Celod/goal_section.png" alt="Személyi edzés és életmódváltás nőknek">
+                    <img src="pictures/Celod/goal_section.png" alt="Személyi edzés és életmódváltás nőknek" loading="lazy">
                 </div>
             </section>
 
-            <div class="section_border"></div>
+            <div class="section-border"></div>
 
-            <section class="row_one szolg_container" id="services">
+            <section class="row-one szolg-container" id="services">
                 <h2>Szolgáltatások</h2>
                 <hr>
-                <div class="szolg_list">
-                    <div class="szolg_card">
-                        <img class="szolg_img" src="pictures/Szolgaltatasok/szemelyi_edzes.png" alt="Személyi edzés Budapesten">
-                        <div class="szolg_card_desc">
-                        <div class="szol_logo_cont"><img class="szolg_logo" src="pictures/Szolgaltatasok/szemelyilogo.png"></div>
+                <div class="szolg-list">
+                    <div class="szolg-card">
+                        <img class="szolg-img" src="pictures/Szolgaltatasok/szemelyi_edzes.png" alt="Személyi edzés Budapesten" loading="lazy">
+                        <div class="szolg-card-desc">
+                        <div class="szol-logo-cont"><img class="szolg-logo" src="pictures/Szolgaltatasok/szemelyilogo.png" alt="" loading="lazy"></div>
                             <h3>Személyi edzés</h3>
                             <p>Személyre szabott, figyelemmel és szakértelemmel a céljaidért.</p>
                         </div>
                     </div>
-                    <div class="szolg_card">
-                        <img class="szolg_img" src="pictures/Szolgaltatasok/online_edzes.png">
-                        <div class="szolg_card_desc">
-                        <div class="szol_logo_cont"><img class="szolg_logo" src="pictures/Szolgaltatasok/onlinelogo.png" alt="Személyi edzés Budapesten"></div>
+                    <div class="szolg-card">
+                        <img class="szolg-img" src="pictures/Szolgaltatasok/online_edzes.png" alt="Online coaching" loading="lazy">
+                        <div class="szolg-card-desc">
+                        <div class="szol-logo-cont"><img class="szolg-logo" src="pictures/Szolgaltatasok/onlinelogo.png" alt="" loading="lazy"></div>
                             <h3>Online coaching (30 nap)</h3>
                             <p>Tartalma: <br>
                                 - 1 személyes állapotfelmérés <br>
@@ -185,20 +219,20 @@
                                 - folyamatos visszajelzés és finomhangolás</p>
                         </div>
                     </div>
-                    <div class="szolg_card premium">
-                        <img class="szolg_img" style="border-bottom: solid 2px rgb(143, 121, 0);" src="pictures/Szolgaltatasok/premium_csomag.png" alt="Személyi edzés Budapesten">
-                        <div class="szolg_card_desc">
-                            <div class="szol_logo_prem"><img class="szolg_logo" src="pictures/Szolgaltatasok/premiumlogo.png"></div>
-                            <h3>3 hónapos teljes átalakulás program</h3>
+                    <div class="szolg-card premium">
+                        <img class="szolg-img" src="pictures/Szolgaltatasok/premium_csomag.png" alt="3 hónapos átalakulási program" loading="lazy">
+                        <div class="szolg-card-desc">
+                            <div class="szol-logo-prem"><img class="szolg-logo" src="pictures/Szolgaltatasok/premiumlogo.png" alt="" loading="lazy"></div>
+                            <h3>3 hónapos teljes átalakulási program</h3>
                             <p>Ez egy 3 hónapos, szigorúan vezetett, teljes körű együttműködés, ahol nem külön edzéseket kapsz, hanem egy folyamatosan irányított átalakulási rendszert.
                                 Nem csak az edzéseidről szól, hanem a teljes folyamatodról.
                                 Ezt akkor válaszd, ha nem csak edzőt keresel, hanem valakit, aki végigvisz egy teljes test- és életmódváltáson.</p>
                         </div>
                     </div>
-                    <div class="szolg_card">
-                        <img class="szolg_img" src="pictures/Szolgaltatasok/paros_edzes.png">
-                        <div class="szolg_card_desc">
-                        <div class="szol_logo_cont"><img class="szolg_logo" src="pictures/Szolgaltatasok/paroslogo.fw.png" alt="Személyi edzés Budapesten"></div>
+                    <div class="szolg-card">
+                        <img class="szolg-img" src="pictures/Szolgaltatasok/paros_edzes.png" alt="Páros edzés" loading="lazy">
+                        <div class="szolg-card-desc">
+                        <div class="szol-logo-cont"><img class="szolg-logo" src="pictures/Szolgaltatasok/paroslogo.fw.png" alt="" loading="lazy"></div>
                             <h3>Páros edzés</h3>
                             <p>Edzetek együtt motiváló környezetben - még hatékonyabban, még élvezetesebben.</p>
                         </div>
@@ -206,42 +240,43 @@
                 </div>
                 <p><b>Fontos!</b>
                     Minden együttműködés előzetes egyeztetés után indul, hogy lássuk, melyik csomag illik hozzád legjobban. <br>
-                    A személyi edzés alkalmak és az online csomag 30 napos érvényességgel rendelkeznek.</p>
+                    A személyi edzés alkalmak és az online csomag 30 napos érvényességgel rendelkeznek. A részletes szabályokat a <a href="fontos-tudnivalok.html" style="color: var(--primary);">Fontos tudnivalók</a> oldalon találod.<br>
+                    Az edzés és az étkezési iránymutatás nem helyettesíti az orvosi vizsgálatot.</p>
             </section>
 
-            <div class="section_border"></div>
+            <div class="section-border"></div>
 
-            <section class="row_two todo_line_sec">
+            <section class="row-two todo-line-sec">
                 <h2>Hogyan dolgozunk együtt?</h2>
                 <hr>
-                <div class="todo_line_cont">
-                    <div class="round_cont">
-                        <div class="line_under_round"></div>
-                        <div class="round_holder"><div class="round"><h3>1</h3></div></div>
-                        <div class="round_holder"><div class="round"><h3>2</h3></div></div>
-                        <div class="round_holder"><div class="round"><h3>3</h3></div></div>
-                        <div class="round_holder"><div class="round"><h3>4</h3></div></div>
-                        <div class="round_holder"><div class="round"><h3>5</h3></div></div>
+                <div class="todo-line-cont">
+                    <div class="round-cont">
+                        <div class="line-under-round"></div>
+                        <div class="round-holder"><div class="round"><span>1</span></div></div>
+                        <div class="round-holder"><div class="round"><span>2</span></div></div>
+                        <div class="round-holder"><div class="round"><span>3</span></div></div>
+                        <div class="round-holder"><div class="round"><span>4</span></div></div>
+                        <div class="round-holder"><div class="round"><span>5</span></div></div>
                     </div>
                 
-                    <div class="todo_line_desc">
-                        <div class="todo_card">
+                    <div class="todo-line-desc">
+                        <div class="todo-card">
                             <h3>Kapcsolatfelvétel</h3>
                             <p>Írj nekem és megbeszéljük a céljaidat, elvárásaidat.</p>
                         </div>
-                        <div class="todo_card">
+                        <div class="todo-card">
                             <h3>Állapotfelmérés</h3>
                             <p>Átbeszéljük az életmódod és jelenlegi állapotod.</p>
                         </div>
-                        <div class="todo_card">
+                        <div class="todo-card">
                             <h3>Egyéni terv</h3>
                             <p>Személyre szabott edzés- és táplálkozási tervet készítünk neked.</p>
                         </div>
-                        <div class="todo_card">
+                        <div class="todo-card">
                             <h3>Követés</h3>
                             <p>Rendszeres ellenőrzés, támogatás és motiváció a fejlődéshez.</p>
                         </div>
-                        <div class="todo_card">
+                        <div class="todo-card">
                             <h3>Finomhangolás</h3>
                             <p>A tervet folyamatosan igazítjuk a még jobb eredményért.</p>
                         </div>
@@ -250,79 +285,82 @@
                 <a href="#kapcsolatfelvetel" class="btn">Kapcsolatfelvétel</a>
             </section>
 
-            <div class="section_border"></div>
+            <div class="section-border"></div>
 
-            <section class="row_one csomagok" id="prices">
+            <section class="row-one csomagok" id="prices">
                 <h2>Csomagok</h2>
                 <hr>
                 <p>Válaszd ki a céljaidhoz legjobban illő csomagot!</p>
-                <div class="csomag_slide_cont">
-                    <div id="prev_btn">&#10094;</div>
+                <div class="csomag-slide-cont" tabindex="0" role="group" aria-roledescription="carousel" aria-label="Csomagok (a nyilakkal vagy a nyílbillentyűkkel léptethető)">
+                    <button type="button" id="prev-btn" aria-label="Előző csomag">&#10094;</button>
 
-                    <div class="csomag_slide_item">
+                    <div class="csomag-slide-item">
                         <p>4 alkalmas bérlet</p>
-                        <h2>36.000 Ft</h2>
+                        <p class="csomag-price">36.000 Ft</p>
                         <hr>
                     </div>
-                    <div class="csomag_slide_item">
+                    <div class="csomag-slide-item">
                         <p>8 alkalmas bérlet</p>
-                        <h2>68.000 Ft</h2>
+                        <p class="csomag-price">68.000 Ft</p>
                         <hr>
                     </div>
-                    <div class="csomag_slide_item">
+                    <div class="csomag-slide-item">
                         <p>10 alkalmas bérlet</p>
-                        <h2>80.000 Ft</h2>
+                        <p class="csomag-price">80.000 Ft</p>
                         <div class="ajanlott">Ajánlott</div>
                         <hr>
                     </div>
-                    <div class="csomag_slide_item">
-                        <p>Online csomag</p>
-                        <h2>34.900 Ft</h2>
+                    <div class="csomag-slide-item">
+                        <p>Online coaching (30 nap)</p>
+                        <p class="csomag-price">34.900 Ft</p>
                         <hr>
                     </div>
-                    <div class="csomag_slide_item" style="border: solid 1px rgb(143, 121, 0); box-shadow: 0 10px 15px rgba(85, 72, 1, 0.6);">
-                        <img src="pictures/Szolgaltatasok/premiumlogo.png" style="width: 50px;" alt="Prémium">
+                    <div class="csomag-slide-item csomag-premium">
+                        <img class="csomag-premium-logo" src="pictures/Szolgaltatasok/premiumlogo.png" alt="" loading="lazy">
                         <p>3 hónapos program</p>
-                        <h2>Egyéni ár</h2>
-                        <p style="font-size: smaller;">Részletek egyeztetés alapján</p>
+                        <p class="csomag-price">Egyéni ár</p>
+                        <p class="csomag-note">Részletek egyeztetés alapján</p>
                     </div>
                 
-                    <div id="next_btn">&#10095;</div>
+                    <button type="button" id="next-btn" aria-label="Következő csomag">&#10095;</button>
+                </div>
+                <p class="ar-megjegyzes">Az árak alanyi adómentesek (AAM), ÁFA-t nem tartalmaznak.</p>
             </section>
             
-            <div class="section_border"></div>
+            <div class="section-border"></div>
 
-            <section class="row_two rolam" id="aboutme">
-                <div class="rolam_cim"><h2>Lévai Gabriella</h2><hr></div>
+            <section class="row-two rolam" id="aboutme">
+                <div class="rolam-cim"><h2>Lévai Gabriella</h2><hr></div>
                 
-                <div class="rolam_desc_cont">
-                    <div class="rolam_desc" id="rolam_hidden">
-                        <div class="rolam_cimek">
+                <div class="rolam-desc-cont">
+                    <div class="rolam-desc">
+                        <div class="rolam-cimek">
                             <div class="indicator"></div>
-                            <h3 data-target="bemutatkozas">Bemutatkozás</h3>
-                            <h3 data-target="rolam">Rólam</h3>
-                            <h3 data-target="szemlelet">Szemléletem</h3>
-                            <h3 data-target="hol">Hol dolgozom?</h3>
+                            <button type="button" data-target="bemutatkozas">Bemutatkozás</button>
+                            <button type="button" data-target="rolam">Rólam</button>
+                            <button type="button" data-target="szemlelet">Szemléletem</button>
+                            <button type="button" data-target="hol">Hol dolgozom?</button>
                         </div>
-                        <div class="rolam_text">
+                        <div class="rolam-text" tabindex="0" role="region" aria-label="Bemutatkozás, rólam, szemléletem, hol dolgozom">
                             <section class="observe-section" id="bemutatkozas">
                                 <h3>Bemutatkozás</h3>
                                 <p>
                                     Vannak élethelyzetek, amikor a „kevesebbet enni és többet mozogni” már nem hoz valódi eredményt. <br>
                                     Legyen szó fogyásról, izomépítésről vagy életmódváltásról, sokszor nem több erőfeszítésre, hanem egy jól felépített, átgondolt rendszerre van szükség. <br>
-                                    Személyi edzőként és táplálkozási tanácsadóként abban segítek, hogy az edzésed és az étkezésed átlátható, követhető és a céljaidhoz igazított folyamat legyen — hogy ne találgatásból álljon a fejlődésed.
+                                    Személyi edzőként abban segítek, hogy az edzésed és az étkezési szokásaid átlátható, követhető és a céljaidhoz igazított folyamat legyen — hogy ne találgatásból álljon a fejlődésed.
                                 </p>
                             </section>
                             <hr>
                             <section class="observe-section" id="rolam">
                                 <h3>Rólam</h3>
                                 <p>
-                                    Személyes történetem: Lévai Gabriella vagyok, személyi edző funkcionális Integratív tréner, táplálkozási tanácsadó. <br>
+                                    Lévai Gabriella vagyok, személyi edző és funkcionális integratív tréner. <br>
                                     Már középiskolás éveim alatt is a testnevelés órák helyett gyakran az edzőteremben töltöttem az időmet — innen indult az érdeklődésem a mozgás és az edzés világa felé. <br>
                                     Több mint 5 évet éltem Skóciában, ahol egyre erősebben megfogalmazódott bennem, hogy itthon szeretnék dolgozni és elsősorban nőknek segíteni abban, hogy közelebb kerüljenek egy egészségesebb, tudatosabb életmódhoz.
                                     A hazatérésem után, a COVID időszakában vált még egyértelműbbé számomra, mennyire háttérbe szorul a prevenció és az edukáció az egészség területén, és mennyire sokan maradnak egyedül a bizonytalan információk között.
                                     2021 óta dolgozom személyi edzőként. Kezdetben funkcionális edzőként egy kisebb teremben, majd később edzőtermi környezetben is, ahol csoportos alakformáló órákat, köredzéseket és személyi edzéseket tartottam. <br>
-                                    Ez az út vezetett oda, ahol most vagyok: egy olyan szemlélethez, ahol az edzés és a táplálkozás nem szélsőségekről, hanem fenntartható rendszerről szól.
+                                    Ez az út vezetett oda, ahol most vagyok: egy olyan szemlélethez, ahol az edzés és a táplálkozás nem szélsőségekről, hanem fenntartható rendszerről szól. <br>
+                                    Végzettségeim: fitnesz instruktor, személyi edző és funkcionális integratív tréner (IWI Nemzetközi Fitnesz Iskola).
                                 </p>
                             </section>
                             <hr>
@@ -345,38 +383,66 @@
                         </div>
                     </div>
                         
-                    <div class="rolam_img"></div>
+                    <div class="rolam-img"></div>
                 </div>
             </section>
 
-            <div class="section_border"></div>
+            <div class="section-border"></div>
 
-            <section class="row_one email" id="kapcsolatfelvetel">
+            <section class="row-one partnerem">
+                <h2>Ajánlott partnerem</h2>
+                <div class="partner">
+                    <div class="partner-logo">
+                        PROZIS
+                    </div>
+                    <div class="partner-content">
+                        <h3>Minden, ami az aktív életmódhoz kell</h3>
+                        <p>Fedezd fel a Prozis kínálatát, és válogass az edzéshez és a tudatos életmódhoz kapcsolódó termékek közül!</p>
+                        <a href="https://prozis.com/21Vwh" target="_blank" rel="sponsored noopener noreferrer" class="btn">Fedezd fel a Prozist</a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-border"></div>
+
+            <section class="row-two email" id="kapcsolatfelvetel">
                 <h2>Lépj velem kapcsolatba!</h2>
                 <hr>
                 <p>Küldj egy üzenetet és én felkereslek. Alakítsuk együtt a jövődet!</p>
+                
                     <form action="https://formspree.io/f/maqzpajv" method="post" id="my-form" class="email-cont">
                         <label for="name">Név:</label>
-                        <input type="text" id="name" name="name" required placeholder="Kis Virág">
+                        <input type="text" id="name" name="name" autocomplete="name" required placeholder="Kis Virág">
 
                         <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required placeholder="kisvirag@gmail.com">
+                        <input type="email" id="email" name="email" autocomplete="email" required placeholder="kisvirag@gmail.com">
 
-                        <label for="phone">Telefon szám:</label>
-                        <input type="tel" id="phone" name="phone" required placeholder="+36 20 123 4567" pattern="^\+?[0-9\s-]{8,15}$">
+                        <label for="phone">Telefonszám:</label>
+                        <input type="tel" id="phone" name="phone" inputmode="tel" autocomplete="tel" required placeholder="+36 20 123 4567"
+                                pattern="\+?[0-9\s\-]{8,20}" title="Add meg a telefonszámod, pl. +36 20 123 4567">
 
                         <label for="message">Üzenet:</label>
                         <textarea id="message" name="message" rows="5" placeholder="Opcionális"></textarea>
 
-                        <button type="submit" class="btn" style="margin: auto;">Elküld</button>
-                        <p id="my-form-status"></p>
+                        <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                        <p style="font-size: 0.85rem; text-align: center; margin: 0 0 1rem 0;">
+                            Az űrlap elküldésével elfogadod az
+                            <a href="adatkezeles.html" target="_blank" rel="noopener" style="color: var(--primary);">Adatkezelési tájékoztatóban</a>
+                            foglaltakat.
+                        </p>
+
+                        <button type="submit" class="btn">Elküld</button>
+                        <p id="my-form-status" role="status" aria-live="polite"></p>
                     </form>
             </section>
+            <div class="section-border"></div>
         </main>
 
         <footer id="footer">
+            <div class="footer-main">
             <div>
-                <h2>Keress Bizalommal!</h2>
+                <h2>Keress bizalommal!</h2>
                 <div class="kapcsolatok">
                     <!-- Facebook -->
                     <a href="https://www.facebook.com/gabriella.levai.92"
@@ -408,25 +474,20 @@
                 </div>
                 <p>Tel: +36 20 433 24 03</p>
                 <p>E-mail: gabiactivelife@gmail.com</p>
+                <a href="fontos-tudnivalok.html">Fontos tudnivalók</a>
                 <a href="adatkezeles.html">Adatkezelési tájékoztató</a>
                 <a href="impresszum.html">Impresszum</a>
                 <p>Helyszínek:</p>
                 <div class="locations">
-                    <button class="btn" id="chilli2" onclick="setMap('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.3197027070355!2d19.0282250125388!3d47.464199097679156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741ddbfaca09e79%3A0xc4c6ed726deabed2!2sChilli%20Fitness%20Budapest%20-%20Bik%C3%A1s%20park!5e0!3m2!1shu!2shu!4v1777549927616!5m2!1shu!2shu', false)">Chili 2 (Bikás park)</button>
-                    <button class="btn" id="chilli5" onclick="setMap('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9894.543581890584!2d19.046688879663147!3d47.46031674938823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dda0591c70bf%3A0x5f9c98a872795306!2sChili%20Fitness%20Budapest%20-%20%C3%9Ajbuda!5e0!3m2!1shu!2shu!4v1777551209322!5m2!1shu!2shu', true)">Chili 5 (Újbuda)</button>
+                    <button type="button" class="btn map-btn btn-active" data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.3197027070355!2d19.0282250125388!3d47.464199097679156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741ddbfaca09e79%3A0xc4c6ed726deabed2!2sChilli%20Fitness%20Budapest%20-%20Bik%C3%A1s%20park!5e0!3m2!1shu!2shu!4v1777549927616!5m2!1shu!2shu" aria-pressed="true">Chili 2 (Bikás park)</button>
+                    <button type="button" class="btn map-btn" data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9894.543581890584!2d19.046688879663147!3d47.46031674938823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dda0591c70bf%3A0x5f9c98a872795306!2sChili%20Fitness%20Budapest%20-%20%C3%9Ajbuda!5e0!3m2!1shu!2shu!4v1777551209322!5m2!1shu!2shu" aria-pressed="false">Chili 5 (Újbuda)</button>
                 </div>
             </div>
-            <iframe id="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.3197027070355!2d19.0282250125388!3d47.464199097679156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741ddbfaca09e79%3A0xc4c6ed726deabed2!2sChilli%20Fitness%20Budapest%20-%20Bik%C3%A1s%20park!5e0!3m2!1shu!2shu!4v1777549927616!5m2!1shu!2shu" 
-            width="400" 
-            height="300" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe id="map" title="Térkép a kiválasztott edzőterem helyszínéről" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.3197027070355!2d19.0282250125388!3d47.464199097679156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741ddbfaca09e79%3A0xc4c6ed726deabed2!2sChilli%20Fitness%20Budapest%20-%20Bik%C3%A1s%20park!5e0!3m2!1shu!2shu!4v1777549927616!5m2!1shu!2shu" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="copyright">&copy; 2026 Lévai Gabriella. Minden jog fenntartva.</p>
         </footer>
-        <p style="text-align: center;">&copy; 2026 Lévai Gabriella. Minden jog fenntartva.</p>
-        <script src="js/js.js"></script>
+        <script src="js/main.js"></script>
 
     </body>
 </html>

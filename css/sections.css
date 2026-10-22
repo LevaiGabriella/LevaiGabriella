@@ -1,17 +1,4 @@
-/* sections */
-:root {
-    --primary: #c1121f;
-    --btnactive: #9b0f19;
-
-    --bg: #050505;
-    --layout: #0f0f0f;
-    --bgop: rgba(13, 13, 13, 0.8);
-
-    --line: #242424;
-
-    --text: #f5f5f5;
-    --muted-text: #a1a1a1;
-}
+/* sections - a színváltozók a style.css :root blokkjában vannak */
 
 hr{
     border: none;
@@ -24,22 +11,22 @@ hr{
 /* -- Nemsablon -- */
 
 
-.Nemsablon_content{
+.nemsablon-content{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-.Nemsablon_description{
+.nemsablon-description{
     margin: 2rem;
     max-width: 400px;
 }
-.Nemsablon_list{
+.nemsablon-list{
     display: flex;
     max-width: 1300px;
     gap: 1.5rem;
 }
-.Nemsablon_card{
+.nemsablon-card{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,35 +42,35 @@ hr{
         var(--line) 100%);
     transition: all 0.3s ease;
 }
-.Nemsablon_card:hover{
+.nemsablon-card:hover{
     transform: scale(1.03);
 }
-.Nemsablon_img{
+.nemsablon-img{
     width: 150px;
     margin: 1rem;
 }
 
 @media (max-width: 1140px) {
-    .Nemsablon_list{
+    .nemsablon-list{
         flex-direction: column;
     }
-    .Nemsablon_description{
+    .nemsablon-description{
         width: 50%;
     }
-    .Nemsablon_card{
+    .nemsablon-card{
         flex-direction: row;
         width: auto;
     }
 }
 @media (max-width: 750px) {
-    .Nemsablon_content{
+    .nemsablon-content{
         flex-direction: column;
     }
-    .Nemsablon_description{
+    .nemsablon-description{
         text-align: center;
         width: 90%;
     }
-    .Nemsablon_content hr{
+    .nemsablon-content hr{
         background: linear-gradient(to right, var(--bg) 0%, var(--primary) 40%, var(--primary) 60%, var(--bg) 100%);
         margin: 1rem auto;
     }
@@ -201,14 +188,14 @@ hr{
 
 /* -- Szolgáltatások -- */
 
-.szolg_container{
+.szolg-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.szolg_list{
+.szolg-list{
     max-width: 1300px;
     width: 100%;
     gap: 2rem;
@@ -216,7 +203,7 @@ hr{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.szolg_card{
+.szolg-card{
     border: solid 3px var(--line);
     background: radial-gradient(
         circle at 30% 70%, 
@@ -227,16 +214,16 @@ hr{
     position: relative;
     transition: all 0.3s ease;
 }
-.szolg_card:hover{
+.szolg-card:hover{
     transform: scale(1.03);
 }
-.szolg_card h3, .szolg_card p{
+.szolg-card h3, .szolg-card p{
     margin: 1.5rem;
 }
-.szolg_card_desc{
+.szolg-card-desc{
     position: relative;
 }
-.szolg_img{
+.szolg-img{
     width: 100%;
     object-fit: cover;
     border-bottom: solid 2px var(--primary);
@@ -245,7 +232,7 @@ hr{
     border: solid 3px rgb(143, 121, 0);
     scale: 1.03;
 }
-.szol_logo_cont{
+.szol-logo-cont{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -260,7 +247,7 @@ hr{
         0 0 0 5px rgba(0,0,0,1), /* áttetsző fekete gyűrű */
         0 0 0 8px #b90000;           /* háttérszínű külső gyűrű */
 }
-.szol_logo_cont::before{
+.szol-logo-cont::before{
     content: "";
     position: absolute;
     inset: 0;
@@ -268,11 +255,11 @@ hr{
     background: rgba(0,0,0,.5);
     z-index: 1;
 }
-.szolg_logo{
+.szolg-logo{
     height: 50px;
     z-index: 100;
 }
-.szol_logo_prem{
+.szol-logo-prem{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -283,44 +270,43 @@ hr{
     height: 65px;
     width: 65px;
     border-radius: 50%;
-    border-radius: 50%;
         box-shadow:
         0 0 0 3px rgb(143, 121, 0);
 }
-.szolg_container hr{
+.szolg-container hr{
     background: linear-gradient(to right, var(--bg) 0%, var(--primary) 40%, var(--primary) 60%, var(--bg) 100%);
         margin: 1rem auto;
 }
-.szolg_container p{
+.szolg-container p{
     text-align: left;
 }
 
 
 /* -- To Do Line Section -- */
 
-.todo_line_sec{
+.todo-line-sec{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.todo_line_sec h2{
+.todo-line-sec h2{
     text-align: center;
 }
-.todo_line_sec hr{
+.todo-line-sec hr{
     background: linear-gradient(to right, var(--layout) 0%, var(--primary) 40%, var(--primary) 60%, var(--layout) 100%);
     margin: 1rem auto;
 }
 
     /* - Line - */
 
-    .todo_line_cont{
+    .todo-line-cont{
     display: flex;
     flex-direction: column;
     position: relative;
     width: 85%;
     }
-    .round_cont{
+    .round-cont{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -337,13 +323,13 @@ hr{
         z-index: 2;
         background: var(--layout);
     }
-    .round_holder{
+    .round-holder{
         width: 180px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .line_under_round{
+    .line-under-round{
         height: 0px;
         width: calc(100% - 200px);
         position: absolute;
@@ -357,14 +343,14 @@ hr{
 
     /* - description - */
 
-    .todo_line_desc{
+    .todo-line-desc{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         height: 150px;
     }
-    .todo_card{
+    .todo-card{
         width: 180px;
         height: 100%;
         text-align: center;
@@ -375,28 +361,28 @@ hr{
     }
 
 @media (max-width: 900px) {
-    .todo_line_cont{
+    .todo-line-cont{
         flex-direction: row;
         justify-content: space-between;
     }
-    .round_cont{
+    .round-cont{
         flex-direction: column;
         height: auto;
         flex: 0.5;
     } 
-    .todo_line_desc{
+    .todo-line-desc{
         flex: 1.5;
         flex-direction: column;
         height: auto;
         justify-content: space-between;
     }
-    .round_holder, .todo_card{
+    .round-holder, .todo-card{
         width: auto;
         margin: 1rem;
         justify-content: center;
         height: 100px;
     }
-    .line_under_round{
+    .line-under-round{
         width: 0px;
         height: calc(100% - 100px);
         left: 12%;
@@ -417,14 +403,14 @@ hr{
     margin: 1rem auto;
 }
 
-.csomag_slide_cont{
+.csomag-slide-cont{
     position: relative;
     background-color: var(--bg);
     height: 300px;
     width: 600px;
     margin: auto;
 }
-.csomag_slide_item{
+.csomag-slide-item{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -459,78 +445,79 @@ hr{
     top: 15px;
     left: 28%;
 }
-.csomag_slide_item hr{
+.csomag-slide-item hr{
     background: linear-gradient(to right, var(--bg) 0%, var(--primary) 40%, var(--primary) 60%, var(--bg) 100%);
 }
-.active{
+.slide-active{
     opacity: 1;
     z-index: 10;
     transform: translateX(0) scale(1);
 }
-.left{
+.slide-left{
     opacity: 0.8;
     transform: translateX(-100px) scale(0.8);
     z-index: 9;
 }
-.right{
+.slide-right{
     opacity: 0.8;
     transform: translateX(100px) scale(0.8);
     z-index: 9;
 }
-.hide{
+.slide-hide{
     opacity: 0;
     pointer-events: none;
     left: 225px;
 }
-#prev_btn{
+#prev-btn,
+#next-btn {
     position: absolute;
     top: 130px;
-    left: 5px;
     height: 40px;
-    width: 5px;
+    width: 40px;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--text);
     font-size: 30px;
-    cursor:pointer;
-    user-select:none;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
 }
-#next_btn{
-    position: absolute;
-    top: 130px;
-    left: 580px;
-    height: 40px;
-    width: 5px;
-    font-size: 30px;
-    cursor:pointer;
-    user-select:none;
+#prev-btn {
+    left: 0;
+}
+#next-btn {
+    left: 560px;
 }
 @media (max-width: 640px){
     .csomagok{
         height: fit-content;
     }
-    .csomag_slide_item{
+    .csomag-slide-item{
         top: 140px;
         left: 25px;
     }
-    .csomag_slide_cont{
+    .csomag-slide-cont{
         height: 500px;
         width: 200px;
         margin: auto;
     }
-    .left{
+    .slide-left{
         transform: translateY(-100px) scale(0.8);
     }
-    .right{
+    .slide-right{
         transform: translateY(100px) scale(0.8);
     }
-    .hide{
+    .slide-hide{
         left: 25px;
     }
-    #prev_btn{
+    #prev-btn {
         top: 10px;
-        left: 99px;
+        left: 80px;
         rotate: 90deg;
     }
-    #next_btn{
-        left: 99px;
+    #next-btn {
+        left: 80px;
         top: 440px;
         rotate: 90deg;
     }
@@ -547,11 +534,11 @@ hr{
     justify-content: center;
     align-items: center;
 }
-.rolam_cim hr, .rolam_text hr{
+.rolam-cim hr, .rolam-text hr{
         margin: 1rem auto;
         background: linear-gradient(to right, var(--bg) 0%, var(--primary) 40%, var(--primary) 60%, var(--bg) 100%);
     }
-.rolam_desc_cont{
+.rolam-desc-cont{
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -560,21 +547,29 @@ hr{
     border-radius: 8px;
     overflow: hidden;
 }
-.rolam_desc{
+.rolam-desc{
     display: flex;
     flex-direction: row;
     gap: 1rem;
     flex: 2;
 }
-.rolam_cimek{
+.rolam-cimek{
     flex: 0.5;
     min-width: 170px;
     position: relative;
     margin-left: 1rem;
     margin-top: 2rem;
 }
-.rolam_cimek h3 {
+.rolam-cimek button {
+    font-family: "Cormorant Garamond", serif;
     font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text);
+    background: none;
+    border: 0;
+    padding: 0;
+    text-align: left;
+    width: calc(100% - 2rem);
     height: 50px;
     display: flex;
     align-items: center;
@@ -590,21 +585,23 @@ hr{
     background-color: var(--primary);
     transition: all 0.2s ease;
 }
-.rolam_text{
+.rolam-text{
     overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) transparent;
     margin: 1.3rem;
     max-width: 650px;
     border-left: solid 1px var(--line);
     padding-left: 1rem;
     height: 500px;
 }
-.rolam_text p{
+.rolam-text p{
     font-size: 1.1rem;
     letter-spacing: 1px;
     margin: 2rem 0;
     line-height: 1.8;
 }
-.rolam_img{
+.rolam-img{
     height: 600px;
     width: 450px;
     background: url("../pictures/aboutme.jpg");
@@ -619,10 +616,10 @@ hr{
     .rolam{
         height: auto;
     }
-    .rolam_desc_cont{
+    .rolam-desc-cont{
         flex-direction: column;
     }
-    .rolam_img{
+    .rolam-img{
         flex: auto;
         width: 100%;
         height: 700px;
@@ -630,11 +627,73 @@ hr{
     }
 }
 @media (max-width: 700px) {
-    .rolam_desc{
+    .rolam-desc{
         flex-direction: column;
     }
 }
 
+/* -- Partnerem -- */
+
+.partnerem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.partnerem h2{
+    margin-bottom: 2.5rem;
+}
+.partner p{
+    text-align: left;
+}
+.partner{
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    width: 80%;
+    gap: 1rem;
+}
+.partner-logo{
+    display: flex;
+    align-items: center;
+
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -2.5px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #fff;
+}
+.partner-content{
+    display: flex;
+    padding-left: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+.partner-content h3{
+    font-size: 25px;
+}
+.partner .btn{
+    margin: auto;
+}
+@media (max-width: 830px){
+    .partner{
+        flex-direction: column;
+    }
+    .partner-logo{
+        align-items: center;
+        justify-content: center;
+        min-height: 100px;
+    }
+    .partner-content{
+        align-items: center;
+    }
+    .partner p{
+        text-align: center;
+    }
+}
 /* -- email -- */
 
 .email{
@@ -658,6 +717,8 @@ label{
     color: var(--muted-text);
 }
 input{
+    font-family: inherit;
+    font-size: 1rem;
     background-color: var(--muted-text);
     color: var(--bg);
     border: none;
@@ -668,6 +729,7 @@ input{
 textarea{
     background-color: var(--muted-text);
     font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
     color: var(--bg);
     border: none;
     border-radius: 4px;
@@ -678,4 +740,72 @@ input:focus, textarea:focus{
     outline: none;
     border: 2px solid var(--btnactive);
     box-shadow: 0 0 5px var(--primary);
+}
+
+
+/* -- Kiegészítések (korábbi inline stílusok és új elemek) -- */
+
+.premium .szolg-img {
+    border-bottom-color: rgb(143, 121, 0);
+}
+
+.csomag-price {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+.csomag-premium {
+    border: solid 1px rgb(143, 121, 0);
+    box-shadow: 0 10px 15px rgba(85, 72, 1, 0.6);
+}
+.csomag-premium-logo {
+    width: 50px;
+}
+.csomag-note {
+    font-size: smaller;
+}
+.ar-megjegyzes {
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+}
+.csomag-slide-cont:focus-visible {
+    outline-offset: 6px;
+}
+
+.email-cont .btn {
+    margin: auto;
+}
+.hp-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+.status-success {
+    color: #7bd88f;
+}
+.status-error {
+    color: #ff7b7b;
+}
+
+/* Kevesebb mozgás kérése esetén nincs sima görgetés és hover-nagyítás */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+    .btn:hover,
+    .menu ul li a:hover,
+    .szemlelet-item:hover,
+    .kapcsolatok img:hover,
+    .szolg-card:hover,
+    .nemsablon-card:hover {
+        transform: none;
+    }
 }
